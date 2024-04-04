@@ -7,9 +7,9 @@
         $userlocal = $_POST['username'];
         $passlocal = $_POST['password'];
 
-        include "conexions.php";
+        include "connexions.php";
         $usuari = "select username from user where username = \"$userlocal\";";
-        $consulta=mysqli_query($conexio,$usuari);
+        $consulta=mysqli_query($connexion,$usuari);
         $reg = mysqli_fetch_array($consulta); 
         if ($reg!=NULL){
             echo  "This username already exists";
@@ -23,7 +23,7 @@
         $insert = "insert into user (username,password)
          values (\"$userlocal\",\"$passlocal\");";
 
-        mysqli_query($conexio,$insert);
+        mysqli_query($connexion,$insert);
     ?>
         <meta http-equiv="Refresh" content="0; url='login.html'" />
     <?php
