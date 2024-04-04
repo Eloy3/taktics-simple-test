@@ -7,7 +7,8 @@ The solution is provided using xampp, as that is the technology I'm used to from
 Once Xampp is installed:
 
 - Open the Xampp controll panel and start the Apache and MySQL modules.
-- Find the folder where xampp is installed and navigate to htdocs. Inside that folder copy the 'taktics' folder provided in this repository.
+- Find the folder where xampp is installed and navigate to \htdocs. Inside that folder copy the 'taktics' folder provided in this repository.
 - Back in the control panel click on the 'admin' button for MySQL. That will open a website, there create a database of the name 'taktics'. You can start with an empty database but I recommend importing the tables provided in the repository file 'taktics.sql'.
-- Navigate to http://localhost/taktics/login.html
+- Navigate to http://localhost/taktics/login.html to view the solution.
+- Try the user 'Eloy' with the password '123' or create another user clicking on 'register'.
 
