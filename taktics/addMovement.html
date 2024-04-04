@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login_style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <form action="addMovement.php" method = "post">
+        <!-- input type-->
+        <div class="form-group">
+          <select id="type" name="type" class="form-control">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+          </select>
+        </div>
+
+        <!-- input name-->
+        <div class="form-group">
+            <textarea type="text" id="name" name="name" class="form-control" rows=1 placeholder="name" ></textarea>
+        </div>
+
+        <!-- input date-->
+        <div class="form-group">
+            <input type="date" id="date" name="date" class="form-control" ></textarea>
+        </div>
+
+        <!-- input amount-->
+        <div class="form-group">
+            <input type="text" id="amount" name="amount" class="form-control" rows=1 placeholder="amount" ></textarea>
+        </div>
+
+        <!-- input category-->
+        <div class="form-group">
+            <textarea type="text" id="category" name="category" class="form-control" rows=1 placeholder="category" ></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Insert</button>
+
+        <div class="text-center">
+            <p><a href="balance.php">Back to balance page</a></p>
+        </div>
+      
+      </form>
+</body>
+</html>
