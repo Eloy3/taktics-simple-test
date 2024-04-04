@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="estilperfil.css">
+        <link rel="stylesheet" type="text/css" href="balancePage_style.css">
     </head>
     <?php
 
