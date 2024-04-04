@@ -8,6 +8,10 @@
 session_start();       
 if(isset($_SESSION['name'])){
     $username = $_SESSION['name'];
+    // Initialize variables outside the condition
+    $totalIncome = 0;
+    $totalExpense = 0;
+    $balance = 0;
 ?>
 
 <body>
@@ -51,8 +55,7 @@ if(isset($_SESSION['name'])){
                                 </thead>
                                 <tbody>
                                 <?php
-                                $totalIncome = 0;
-                                $totalExpense = 0;
+                                // Move initialization here to ensure it always happens
                                 for($i=0;$reg!=NULL;$i++){
                                     ?>
                                     <tr>
